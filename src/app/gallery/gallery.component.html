@@ -1,0 +1,14 @@
+<div class="gallery-container">
+  <div class="row">
+    <ul class="gallery-list-container">
+      <li class="gallery-list" *ngFor="let image of this.images">
+        <img 
+          (click)="selectImage(image.url)"
+          class="gallery" 
+          [src]="image.url" 
+          [alt]="image.name"
+          class="image" />
+      </li>
+    </ul>
+  </div>
+</div>

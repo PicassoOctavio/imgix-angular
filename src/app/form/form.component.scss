@@ -1,0 +1,85 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.parameter {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.url-field {
+  background-color: black;
+  width: 100%;
+}
+.table-container {
+  display: flex;
+  overflow: auto;
+  min-width: 400px;
+  padding: 5px;
+}
+
+.form-section{
+  background-color: #366769;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.buttons-textarea{
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons{
+  justify-content: space-around;
+  display: flex;
+  padding: 10px;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.element-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  min-width: 300px;
+}
+
+.field-element{
+  max-width: 100px;
+}
+
+@media screen and ( max-width: 768px ){
+  .table-container{
+    min-width: 300px;
+  }
+
+  .element-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    min-width: 300px;
+  }
+}

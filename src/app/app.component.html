@@ -1,0 +1,18 @@
+<div *ngIf="images?.length && image" class="col main-layout">
+  <app-header></app-header>
+  <div class="form-image-container">
+    <app-form 
+        (urlWithFilters)="refreshUrl($event)" 
+        [url]="image" 
+        [image]="image"
+    >
+    </app-form>
+    <app-mainImage 
+        [image]="image" 
+    ></app-mainImage>
+  </div>
+
+  <app-gallery (imageUrl)="refreshUrl($event)" [images]="images"></app-gallery>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,66 @@
+a {
+  visibility: visible;
+}
+img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.row,
+.left-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  height: 64px;
+  padding: 0 15px 0 15px;
+}
+.sign-in,
+.imgix-api-reference,
+.contact-us {
+  color: white;
+}
+
+.right-row {
+  display: flex;
+  gap: 40px;
+}
+
+.example-icon {
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hamburguer-menu-container {
+  display: none;
+  right: 0;
+  margin-top: 64px;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgb(33, 33, 33);
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    order: 1;
+  }
+  .example-icon {
+    display: grid;
+    order: 2;
+  }
+  .right-row {
+    display: none;
+  }
+  .left-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}

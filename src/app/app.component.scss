@@ -1,0 +1,20 @@
+
+.main-layout{
+	display: flex;
+	flex-direction: column;
+}
+.form-image-container{
+	display: flex;
+  flex-direction: row;
+}
+
+.main-image-component{
+	grid-column: 1;	
+  grid-row: 3;
+}
+
+@media screen and (max-width: 600px){
+	.form-image-container{
+		flex-direction: column;
+	}
+}

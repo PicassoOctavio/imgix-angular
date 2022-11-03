@@ -1,0 +1,72 @@
+<div [ngClass]="{ 'example-icon': showMenu }" class="hamburguer-menu-container">
+  <div class="hamburger-menu">
+    <a
+      mat-stroked-button
+      href="https://dashboard.imgix.com/sign-up"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="sign-in"
+    >
+      Sign in
+    </a>
+    <a
+      mat-stroked-button
+      href="https://docs.imgix.com/apis/rendering"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="imgix-api-reference"
+    >
+      imgix API Reference
+    </a>
+
+    <a
+      mat-stroked-button
+      href="https://imgix.com/contact"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="contact-us"
+    >
+      Contact us
+    </a>
+  </div>
+</div>
+<mat-toolbar class="row" color="secondary">
+  <div class="left-row">
+    <button
+      (click)="showMenu = !showMenu"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <img class="logo" src="../../assets/images/logo.svg" alt="logo" />
+  </div>
+
+  <div class="right-row">
+    <a
+      mat-stroked-button
+      href="https://docs.imgix.com/apis/rendering"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      imgix API Reference
+    </a>
+    <a
+      mat-stroked-button
+      href="https://imgix.com/contact"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Contact us
+    </a>
+    <a
+      mat-stroked-button
+      href="https://dashboard.imgix.com/sign-up"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      Sign in
+    </a>
+  </div>
+</mat-toolbar>
